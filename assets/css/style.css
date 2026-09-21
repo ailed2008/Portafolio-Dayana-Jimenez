@@ -1,0 +1,255 @@
+/* FUENTES DE GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+/* VARIABLES */
+:root {
+
+    --header-height: 3.5rem;
+    --font-medium: 500;
+
+    --first-color: #5361FF;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 2.8rem;
+    --medium-font-size: 1.8rem;
+    --h2-font-size: 1.3rem;
+    --normal-font-size: 0.95rem;
+    --small-font-size: 0.85rem;
+
+    /* Sobrescribir colores de bootstrap */
+    --bs-primary: var(--first-color);
+    --bs-primary-rgb: 83, 97, 255;
+    --bs-dark: var(--dark-color);
+    --bs-dark-rgb: 42, 59, 71;
+    --bs-body-font-family: var(--body-font);
+    --bs-body-color: var(--text-color);
+    --bs-body-bg: var(--white-color);
+}
+
+/* Ajuste de fuentes para pantallas grandes (Tablets/Escritorio) */
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 4.5rem;
+        --medium-font-size: 3rem;
+        --h2-font-size: 1.6rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+    }
+}
+
+
+.nav_logo img{
+    width:80px;
+    height:80px;
+}
+
+
+/* SECCIÓN HOME / BANNER */
+.home {
+    background-color: var(--first-color);
+    min-height: calc(100vh - var(--header-height));
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+/* TÍTULO Y EFECTO DE SOMBRA */
+.home_title {
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+    text-shadow: 0 15px 25px rgba(0, 0, 0, 0.25); /* Sombra idéntica a la imagen */
+}
+
+#typed-text{
+    color: var(--dark-color) !important;
+    font-weight: bold;
+}
+
+.home_subtitle {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    opacity: 0.95;
+}
+
+/* BOTÓN DE DESCARGAR CV */
+.cv_button {
+    background-color: #00A2D3; /* Color Cyan característico */
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.cv_button:hover {
+    background-color: #0088B3;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* TEXTO VERTICAL SCROLL DOWN */
+.home_scroll {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+.home_scroll-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+
+.home_scroll-link:hover {
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+/* CONTENEDOR DE LA IMAGEN */
+.home_img-wrapper {
+    max-width: 45%;
+    pointer-events: none;
+}
+
+.home_img {
+    max-height: 42vh;             /* Altura máxima al % del alto de la pantalla */
+    width: auto;                  /* Ajusta el ancho automáticamente para no deformar */
+    object-fit: contain;          /* Escala la imagen para que quepa sin recortarse */
+    object-position: bottom right;/* Alinea la foto a la base e izquierda/derecha */
+    display: block;               /* Quita el espacio en blanco inferior no deseado */
+}
+
+
+/* ADAPTACIÓN MÓVIL */
+@media screen and (max-width: 767px) {
+    .home_img-wrapper {
+        max-width: 70%;
+        opacity: 0.35; /* Suaviza la foto en celulares para priorizar el texto */
+    }
+
+    .home_scroll {
+        display: none; /* Oculta el texto vertical en celulares */
+    }
+}
+
+
+/* ==========================================================================
+SECCIÓN ABOUT / SOBRE MÍ
+   ========================================================================== */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.about {
+    padding: 4rem 0;
+}
+
+.section-title {
+    color: var(--dark-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about_img {
+    max-width: 180px;
+}
+
+.about_subtitle {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+}
+
+.about_profession {
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+ LÍNEA DEL TIEMPO / EXPERIENCIA 
+   ========================================================================== */
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 3px solid var(--first-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* El último elemento (el más viejo) quita el margen inferior */
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 15px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+    border: 3px solid #FFFFFF;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer_title {
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+}
+
+.footer_link {
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+.footer_link:hover {
+    color: var(--first-color) !important;
+}
+
+.footer_social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer_social:hover {
+    background-color: var(--first-color);
+    color: #FFFFFF !important;
+    transform: translateY(-3px);
+}
+
+.derechos {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
