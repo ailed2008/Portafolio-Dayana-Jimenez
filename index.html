@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     
 </head>
 <body>
@@ -59,19 +59,6 @@
     <section class="home position-relative d-flex align-items-center" id="home">
         <div class="container h-100 position-relative z-2">
             <div class="row align-items-center h-100">
-                
-                <!-- Contenido-->
-                 <!-- 
-                  <div class="col-lg-8 text-white">
-                    <h1 id="typed-text" class="home_title fw-bold">
-                        <span>Hola</span><br>
-                        <span>Soy Dayana Jiménez</span><br>
-                        <span class="home_subtitle">Desarrolladora Java Jr</span>
-                    </h1>
-
-                </div>
-                -->
-
                 <!-- Contenido -->
                 <div class="col-lg-8 text-white">
                     <h1 class="home_title fw-bold">
@@ -79,14 +66,20 @@
                         <span>Soy Dayana Jiménez</span>
                     </h1>
                     
-                    <!-- Texto dinamico se genera con Typed.js -->
+                    <!-- Texto dinamico que se genera con Typed.js -->
                     <p  class="fs-4 mt-2 home_title">
                         <span id="typed-text" class="home_subtitle text-primary fw-semibold"></span>
                     </p>
 
-                    <!-- Botón Descargar CV -->
+                    <!-- Botón CV -->
                     <a href="assets/pdf/CV_Dayana_Jimenez_Java_Jr.pdf" target="_blank" rel="noopener noreferrer" class="cv_button btn mt-4">
                         <i class='bx bx-download me-2'></i> Descargar CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/jimenezdayana" target="_blank" rel="noopener noreferrer" class="cv_button btn mt-4 about_social-icon">
+                            <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ailed2008" target="_blank" rel="noopener noreferrer" class="cv_button btn mt-4 about_social-icon">
+                            <i class="bx bxl-github"></i>
                     </a>
                 </div>
 
@@ -96,7 +89,7 @@
         <!-- Scroll down o deslizar -->
         <div class="home_scroll position-absolute bottom-0 start-0 mb-4 ms-4 ms-md-5 z-2">
             <a href="#about" class="home_scroll-link text-white text-decoration-none d-flex align-items-center gap-2">
-                <i class="bx bx-down-arrow-alt"></i>
+                <!--<i class="bx bx-down-arrow-alt"></i>-->
                 <span>Deslizar</span>
             </a>
         </div>
@@ -114,7 +107,7 @@
             <h2 class="section-title text-center">Acerca de mí</h2>
 
             <div class="row align-items-center justify-content-center mt-5">
-                <!-- Logo / Imagen -->
+                <!-- Logo / img -->
                 <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0">
                     <div class="about_img-wrapper">
                         <img src="assets/img/Logo-DayJim.png" alt="Logo Dayana Jiménez" class="about_img img-fluid">
@@ -126,7 +119,7 @@
                     <h3 class="about_subtitle fw-bold">Soy Dayana Ailed Jiménez Copeño</h3>
                     <span class="about_profession d-block mb-3 fw-semibold">Ingeniera en Sistemas Computacionales</span>
                     <p class="about_text">
-                       Nací y crecí en Acapulco, Guerrero. 
+                       Nací y crecí en Acapulco, Guerrero.  Actualmente me ubico en la Ciudad de México.
                     </p>
                     <p class="about_text">
                         Soy Ingeniera en Sistemas especializada en Java, con experiencia en todo el ciclo de vida del software, diseño de bases de datos y soporte técnico a usuarios. Mi trayectoria combina capacidad de adaptación, atención al detalle y enfoque en soluciones orientadas a resultados, integrando metodologías ágiles 
@@ -141,9 +134,7 @@
                         <a href="https://github.com/ailed2008" target="_blank" rel="noopener noreferrer" class="about_social-icon">
                             <i class="bx bxl-github"></i>
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" class="about_social-icon">
-                            <i class="bx bxl-github"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -156,45 +147,40 @@
                 <h2 class="section-title text-center">Tecnologías</h2>
 
                 <div class="row g-4 mt-4 justify-content-center">
-                    <!-- Card Frontend -->
+                    <!-- Front -->
                     <div class="col-md-5 col-lg-4">
                         <div class="skill-card text-center p-4 bg-white rounded shadow-sm h-100">
                             <i class="bx bx-code-alt skill-icon mb-3"></i>
                             <h3 class="h5 fw-bold mb-3">Frontend</h3>
                             <div class="d-flex flex-wrap justify-content-center gap-2">
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">HTML</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">CSS</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">JS</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">Angular</span>
+                                <img class="icon-skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                                <img class="icon-skill" height: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                                <img class="icon-skill" height: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                             </div>
                         </div>
                     </div>
-                    <!-- Card Backend -->
+                    <!-- Back -->
                     <div class="col-md-5 col-lg-4">
                         <div class="skill-card text-center p-4 bg-white rounded shadow-sm h-100">
                             <i class="bx bx-code-alt skill-icon mb-3"></i>
                             <h3 class="h5 fw-bold mb-3">Backend</h3>
                             <div class="d-flex flex-wrap justify-content-center gap-2">
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">Java 21</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">Spring Boot</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">REST API</span>
-                                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2">SQL Server</span>
-                                    
+                                <img class="icon-skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                                <img class="icon-skill"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                                <img class="icon-skill"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card Herramientas -->
+                    <!-- Herramientas -->
                     <div class="col-md-5 col-lg-4">
                         <div class="skill-card text-center p-4 bg-white rounded shadow-sm h-100">
                             <i class="bx bx-cog skill-icon mb-3"></i>
-                            <h3 class="h5 fw-bold mb-3">Herramientas & Prácticas</h3>
+                            <h3 class="h5 fw-bold mb-3">Herramientas</h3>
                             <div class="d-flex flex-wrap justify-content-center gap-2">
-                                <span class="badge bg-dark-subtle text-dark fw-semibold px-3 py-2">Git / GitHub</span>
-                               <!--  <span class="badge bg-dark-subtle text-dark fw-semibold px-3 py-2">Docker</span>-->
-                                <span class="badge bg-dark-subtle text-dark fw-semibold px-3 py-2">Postman</span>
-                                <span class="badge bg-dark-subtle text-dark fw-semibold px-3 py-2">POO & SQL</span>
-                                <span class="badge bg-dark-subtle text-dark fw-semibold px-3 py-2">Scrum</span>
+                                <img class="icon-skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                <img class="icon-skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+                                <img class="icon-skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
                             </div>
                         </div>
                     </div>
@@ -293,9 +279,13 @@
                                 </div>
 
                                 <!-- Botón para abrir la modal -->
-                                <button type="button" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" data-bs-toggle="modal" data-bs-target="#modalEcommerce">
+                               <!--  <button type="button" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" data-bs-toggle="modal" data-bs-target="#modalEcommerce">
                                     Ver más detalle del proyecto <i class="bx bx-right-arrow-alt"></i>
                                 </button>
+                                -->
+                                <a href="https://hufflepuf.netlify.app/" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" >
+                                    Ver demo <i class="bx bx-right-arrow-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -312,7 +302,7 @@
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <i class="bx bx-folder fs-2 text-primary"></i>
                                     <div class="project-links">
-                                        <a href="https://github.com/ailed2008/SistemaGestionQuejas" target="_blank" class="text-dark fs-4"><i class="bx bxl-github"></i></a>
+                                        <a href="https://github.com/ailed2008/Sistema-quejas-banco" target="_blank" class="text-dark fs-4"><i class="bx bxl-github"></i></a>
                                     </div>
                                 </div>
                                 <h3 class="h5 card-title fw-bold">Sistema de Gestión de Quejas</h3>
@@ -324,10 +314,10 @@
                                     <span class="badge bg-light text-dark border">POO</span>
                                     <span class="badge bg-light text-dark border">Backend</span>
                                 </div>
-                                 <!-- Botón para abrir la modal -->
-                                <button type="button" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" data-bs-toggle="modal" data-bs-target="#modalEcommerce">
-                                    Ver más detalle del proyecto <i class="bx bx-right-arrow-alt"></i>
-                                </button>
+                               <!-- <a href="https://hufflepuf.netlify.app/" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" >
+                                    Ver demo <i class="bx bx-right-arrow-alt"></i>
+                                </a>
+                                -->
                             </div>
                         </div>
                     </div>
@@ -355,11 +345,9 @@
                                     <span class="badge bg-light text-dark border">JavaScript</span>
                                     <span class="badge bg-light text-dark border">Bootstrap</span>
                                 </div>
-
-                                <!-- Botón para abrir la modal -->
-                                <button type="button" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" data-bs-toggle="modal" data-bs-target="#modalEcommerce">
-                                    Ver más detalle del proyecto <i class="bx bx-right-arrow-alt"></i>
-                                </button>
+                                <a href="https://ecommerce-boupetique.netlify.app/html/proximamente" class="btn btn-outline-primary btn-sm w-100 fw-semibold mt-auto" >
+                                    Ver demo <i class="bx bx-right-arrow-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -370,7 +358,7 @@
     </section>
 </main>
 
-
+    <!-- En proceso modal para mostrar más detalle del proyecto-->
     <div class="modal fade" id="modalEcommerce" tabindex="-1" aria-labelledby="modalEcommerceLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -487,7 +475,6 @@
 
             <hr class="border-secondary my-4 opacity-25">
 
-            <!-- Derechos de Autor -->
             <div class="row">
                 <div class="col text-center">
                     <p class="text-secondary small mb-0">
